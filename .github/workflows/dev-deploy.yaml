@@ -22,7 +22,6 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       
       - name: Build react app
-        working-directory: ./react-app
         run: |
           npm ci
           npm run build
